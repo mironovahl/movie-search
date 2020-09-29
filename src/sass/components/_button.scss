@@ -1,0 +1,30 @@
+.search-form__button {
+  margin-left: -16px;
+  height: 35px;
+  width: 80px;
+  border-radius: 5px;
+  outline: none;
+}
+.keyboard-button {
+  background: url('../img/keyboard.png');
+  background-size: 19px;
+  border: 0;
+  position: relative;
+  height: 16px;
+  padding: 0;
+  width: 19px;
+  top: 2px;
+  left: -41px;
+  @include media-laptop {
+    display: none;
+  }
+}
+.clean-textarea{
+  background: url('../img/clean.png');
+  background-size: 10px;
+  border: 0;
+  position: relative;
+  height: 10px;
+  padding: 0;
+  width: 10px;
+  left: -40px;}

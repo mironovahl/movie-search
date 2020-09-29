@@ -1,0 +1,11 @@
+html {
+  font-size: 10px;
+  @extend %font;
+  background-color: $color-background;
+}
+.wrapper {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  min-height: calc(100vh - 135px);
+}

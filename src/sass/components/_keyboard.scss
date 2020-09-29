@@ -1,0 +1,70 @@
+.keyelem {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: $color-text;
+  @include media-laptop {
+    display: none;
+  }
+}
+.keyboard {
+  &.hidden {
+    display: none;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 995px;
+  margin: auto;
+}
+
+.keys {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 54px;
+  width: 54px;
+  background-color: $color-card;
+  border-radius: 10%;
+  margin: 5px;
+  border:1px solid  $color-card;
+  box-shadow: 3px 3px 3px rgba(34, 60, 80, 0.2);
+  transition: 0.3s;
+  user-select: none;
+  font-size: 1.5rem;
+}
+.selected {
+  transition: 0.3s;
+  height: 52px;
+  width: 52px;
+  margin: 6px;
+  border:1px solid $color-main;
+  box-shadow: 3px 3px 10px $color-main inset;
+}
+.keys:hover {
+  background-color: $color-key-selected;
+  border:1px solid $color-main;
+}
+#Backspace, #CapsLock, #ShiftLeft, #Enter {
+  width: 120px;
+  border-radius: 10px;
+}
+#ShiftLeft {
+  width: 186px;
+}
+#Space {
+  width:442px;
+  border-radius: 10px;
+}
+#CapsLock.selected, #ShiftLeft.selected {
+  margin: 5px;
+}
+#Space.selected {
+  margin: 5px;
+}
+.about {
+  text-align: center;
+}

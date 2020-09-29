@@ -1,0 +1,33 @@
+.footer {
+  font-size: 1.5rem;
+  height: 45px;
+  background-color: $color-main;
+  color: $color-text;
+  padding: 12px 10%;
+}
+.github {
+  display: inline-block;
+  height: 30px;
+  float: right;
+}
+.school {
+  display: inline-block;
+  float: left;
+  margin: 0;
+
+}
+.github-icon {
+  top: 11px;
+  position: relative;
+  height: 30px;
+  border-radius: 6px;
+  background-color: $color-text;
+  border: 1px solid $color-text;
+}
+.github-link {
+  position: relative;
+  vertical-align: middle;
+  top: -15px;
+  color: $color-text;
+  text-decoration: none;
+}
